@@ -54,6 +54,11 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Local-only environment / generated config
+android/local.properties
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+
 # Firebase configuration files - DO NOT COMMIT THESE!
 lib/firebase_options.dart
 android/app/google-services.json

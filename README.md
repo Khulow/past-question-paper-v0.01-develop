@@ -109,8 +109,8 @@ lib/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/Kinetix-Engineering-Solutions/past-question-paper-v0.01.git
-cd past-question-paper-v0.01
+git clone https://github.com/Khulow/past-question-paper-v0.01-develop.git
+cd past-question-paper-v0.01-develop
 ```
 
 ### 2. Install Dependencies
@@ -119,26 +119,18 @@ flutter pub get
 ```
 
 ### 3. Firebase Setup
-**⚠️ IMPORTANT**: This project requires Firebase configuration. See [FIREBASE_SETUP.md](FIREBASE_SETUP.md) for detailed setup instructions.
+**⚠️ IMPORTANT**: This project requires Firebase configuration. The generated Firebase config files (`lib/firebase_options.dart`, `android/app/google-services.json`, `ios/Runner/GoogleService-Info.plist`) are intentionally excluded from this repository for security reasons.
 
 ```bash
 # Install FlutterFire CLI
 dart pub global activate flutterfire_cli
 
 # Configure Firebase for your project
+# This will generate the required config files for all platforms
 flutterfire configure
 ```
 
-### 4. Environment Configuration
-```bash
-# Copy environment template
-cp .env.example .env
-
-# Edit .env with your configuration values
-# Note: .env file is gitignored for security
-```
-
-### 5. Run the Application
+### 4. Run the Application
 ```bash
 # Debug mode
 flutter run
@@ -222,19 +214,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support & Documentation
 
-- **Setup Guide**: [FIREBASE_SETUP.md](FIREBASE_SETUP.md)
-- **Security Guide**: [FIREBASE_SECURITY.md](FIREBASE_SECURITY.md)
+- **Security Guide**: [SECURITY_IMPLEMENTATION.md](SECURITY_IMPLEMENTATION.md)
 - **API Documentation**: Generated in `doc/api/`
-- **Issue Tracker**: [GitHub Issues](https://github.com/Kinetix-Engineering-Solutions/past-question-paper-v0.01/issues)
+- **Issue Tracker**: [GitHub Issues](https://github.com/Khulow/past-question-paper-v0.01-develop/issues)
 
-## 👥 Team
-
-**Kinetix Engineering Solutions**
-- 🌐 Website: [https://kinetix.engineering](https://kinetix.engineering)
-- 📧 Email: contact@kinetix.engineering
-- 🐙 GitHub: [@Kinetix-Engineering-Solutions](https://github.com/Kinetix-Engineering-Solutions)
-
-## 🔄 Version History
+##  Version History
 
 - **v0.01**: Initial release with core functionality
 - **Latest**: Enhanced security, improved documentation, package fixes

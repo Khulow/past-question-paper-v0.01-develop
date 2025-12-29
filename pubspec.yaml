@@ -62,7 +62,6 @@ dependencies:
   # Utility packages
   shared_preferences: ^2.3.2
   google_fonts: ^6.3.1
-  flutter_dotenv: ^6.0.0
   image_picker_web: ^4.0.0
   url_launcher: ^6.3.2
   shimmer: ^3.0.0
@@ -90,7 +89,6 @@ flutter:
   
   # Assets configuration
   assets:
-    - .env
     - assets/images/
     - assets/icons/
 
